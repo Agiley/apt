@@ -1,0 +1,1 @@
+default[:apt][:perform_upgrade] = false

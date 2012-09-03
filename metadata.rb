@@ -11,3 +11,7 @@ recipe            "apt::cacher-client", "Client for the apt::cacher-ng caching p
 %w{ ubuntu debian }.each do |os|
   supports os
 end
+
+attribute 'apt/perform_upgrade', 
+  :description => 'Whether or not apt-get upgrade should run after apt-get update.',
+  :required => "recommended"
